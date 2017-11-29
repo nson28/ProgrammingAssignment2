@@ -6,11 +6,11 @@
 makeCacheMatrix <- function(x = matrix()) {
   inverse_matrix <- NULL
   set_matrix <- function(mat_arg){
-    m <<- mat_arg
+    x <<- mat_arg
     inverse_matrix <<- NULL
   }
   
-  get_matrix <- function() m
+  get_matrix <- function() x
   
   set_inverse <- function(inverse_mat) inverse_matrix <<- inverse_mat
   
